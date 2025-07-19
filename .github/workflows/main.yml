@@ -13,4 +13,5 @@ jobs:
               run: echo "Publicação da Relase final"
     CD:
       needs: [CI]
-      uses: NiltonPita/repo-reaproveitavel/.github/workflows/cd.yml@main
+      uses: repo-reaproveitavel/.github/workflows/cd.yml@main
+
