@@ -7,10 +7,10 @@ on:
         description: "Ambiente onde vai ser feito o deploy"
 jobs:
   deploy-kubernetes:
-      runs-on: ubuntu-latest
-      steps:
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy no ambiente
         run: echo "Executando o deploy no ambiente de ${{secrets.ambiente}}"
-       - name: Curl Deploy no ambiente
+      - name: Curl Deploy no ambiente
         run: "curl -X POST https://webhook.site/776e8f97-b029-4f6d-9bbe-a017f4cbc6fd -d '{ ambiente: ${{ secrets.ambiente}}}'"
-        
+      
