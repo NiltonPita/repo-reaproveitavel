@@ -14,4 +14,4 @@ jobs:
     CD:
      needs: [CI]
      uses: NiltonPita/repo-deploy/.github/workflows/deploy.yml@main
-     secrets: inherit
+    
